@@ -1,2 +1,2 @@
-app/code/community/Aydus/DisableEmailSend/                     app/code/community/Aydus/DisableEmailSend/
-app/etc/modules/Aydus_DisableEmailSend.xml                     app/etc/modules/Aydus_DisableEmailSend.xml
+app/code/community/Aydus/DisableEmailSend                     app/code/community/Aydus/DisableEmailSend
+app/etc/modules/Aydus_DisableEmailSend.xml                    app/etc/modules/Aydus_DisableEmailSend.xml
