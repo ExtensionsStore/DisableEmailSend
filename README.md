@@ -5,7 +5,7 @@ Disable sending emails for newsletter subscription and new customer registration
 Description
 -----------
 Disable sending emails for newsletter subscription and new customer registration.
-This module rewrites the Customer model 
+This module rewrites the Customer model.
 
 
 How to use
