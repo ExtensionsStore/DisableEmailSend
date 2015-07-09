@@ -41,6 +41,15 @@
                     </disable_email_send>
                 </observers>
             </controller_action_predispatch_newsletter_manage_save>            
+            <controller_action_predispatch_customer_account_createpost>
+                <observers>
+                    <disable_email_send>
+                        <type>singleton</type>
+                        <class>aydus_disableemailsend/observer</class>
+                        <method>disableEmailSend</method>
+                    </disable_email_send>
+                </observers>
+            </controller_action_predispatch_customer_account_createpost>
         </events>        
         <helpers>
             <aydus_disableemailsend>
