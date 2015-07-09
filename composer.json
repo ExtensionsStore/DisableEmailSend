@@ -1,0 +1,18 @@
+{
+    "name": "aydus/disableemailsend",
+    "license": "GPL-3.0",
+    "type": "magento-module",
+    "description": "Disable sending emails for newsletter subscription and new customer registration.",
+    "homepage": "https://github.com/aydus/AttributeProducts.git",
+    "require": {
+        "php": ">=5.3",
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "authors": [
+        {
+            "name": "David Tay",
+            "email": "davidt@aydus.com",
+            "role": "Author/Maintainer"
+        }
+    ]
+}

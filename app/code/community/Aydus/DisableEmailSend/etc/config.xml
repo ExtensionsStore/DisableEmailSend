@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * DisableEmailSend module config
+ *
+ * @category   Aydus
+ * @package    Aydus_DisableEmailSend
+ * @author     Aydus <davidt@aydus.com>
+ */
+-->
+<config>
+    <modules>
+        <Aydus_DisableEmailSend>
+            <version>0.9.0</version>
+        </Aydus_DisableEmailSend>
+    </modules>
+    <phpunit>
+        <suite>
+            <modules>
+                <Aydus_DisableEmailSend />
+            </modules>
+        </suite>
+    </phpunit>        
+    <global>
+        <events>
+            <controller_action_predispatch_newsletter_subscriber_new>
+                <observers>
+                    <disable_email_send>
+                        <type>singleton</type>
+                        <class>aydus_disableemailsend/observer</class>
+                        <method>disableEmailSend</method>
+                    </disable_email_send>
+                </observers>
+            </controller_action_predispatch_newsletter_subscriber_new>
+            <controller_action_predispatch_newsletter_manage_save>
+                <observers>
+                    <disable_email_send>
+                        <type>singleton</type>
+                        <class>aydus_disableemailsend/observer</class>
+                        <method>disableEmailSend</method>
+                    </disable_email_send>
+                </observers>
+            </controller_action_predispatch_newsletter_manage_save>            
+        </events>        
+        <helpers>
+            <aydus_disableemailsend>
+                <class>Aydus_DisableEmailSend_Helper</class>
+            </aydus_disableemailsend>
+        </helpers>
+        <models>
+            <aydus_disableemailsend>
+                <class>Aydus_DisableEmailSend_Model</class>
+            </aydus_disableemailsend>
+            <customer>
+            	<rewrite>
+            		<customer>Aydus_DisableEmailSend_Model_Customer</customer>
+            	</rewrite>
+            </customer>
+        </models>
+    </global>  
+</config>
