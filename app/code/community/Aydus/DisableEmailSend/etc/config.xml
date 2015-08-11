@@ -67,4 +67,7 @@
             </customer>
         </models>
     </global>  
+    <default>
+    	<newsletter><aydus_disableemailsend><version>0.9.0</version></aydus_disableemailsend></newsletter>
+    </default>                 
 </config>
